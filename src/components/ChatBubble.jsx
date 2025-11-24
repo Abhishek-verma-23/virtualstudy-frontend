@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ChatBubble({ message, mine }) {
+export default function ChatBubble({ message = {}, mine = false }) {
   return (
     <div className={`flex ${mine ? 'justify-end' : 'justify-start'} mb-2`}>
       <div
